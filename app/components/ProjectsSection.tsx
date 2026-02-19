@@ -1,6 +1,6 @@
 'use client';
 
-import Image from "next/image";
+// import Image from "next/image";
 import { LuGithub, LuExternalLink, LuFolderCode } from "react-icons/lu";
 import { SectionProps } from "../types/sections";
 
@@ -9,7 +9,7 @@ export default function ProjectsSection({ id }: SectionProps) {
     {
       title: "Cloud-Sync Platform",
       description: "A real-time data synchronization engine built with Node.js and Redis, ensuring sub-100ms latency across global clusters.",
-      image: "/p1.png",
+      // image: "/p1.png",
       tech: ["Node.js", "Redis", "Docker", "AWS"],
       github: "https://github.com",
       link: "https://demo.com"
@@ -17,7 +17,7 @@ export default function ProjectsSection({ id }: SectionProps) {
     {
       title: "AI Analysis Dashboard",
       description: "SaaS dashboard for predictive analytics using TensorFlow and Next.js, featuring automated report generation and real-time visualization.",
-      image: "/p2.png",
+      // image: "/p2.png",
       tech: ["Next.js", "TensorFlow", "Tailwind", "PostgreSQL"],
       github: "https://github.com",
       link: "https://demo.com"
@@ -25,7 +25,7 @@ export default function ProjectsSection({ id }: SectionProps) {
     {
       title: "Cyber-Secure Gateway",
       description: "An open-source security middleware for Express.js that implements advanced rate-limiting and JWT-based authentication layers.",
-      image: "/p3.png",
+      // image: "/p3.png",
       tech: ["TypeScript", "Express", "JWT", "Jest"],
       github: "https://github.com",
       link: "https://demo.com"
@@ -57,13 +57,13 @@ export default function ProjectsSection({ id }: SectionProps) {
             >
               <div className="relative aspect-video w-full overflow-hidden bg-gray-900">
                 <div className="absolute inset-0 bg-[#00d2ff]/10 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
-                <Image 
+                {/* <Image 
                   src={project.image} 
                   alt={project.title}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
-                />
+                /> */}
                 
                 <div className="absolute top-3 right-3 z-20 flex gap-2">
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-[#0a0a0a]/90 backdrop-blur-md rounded-full text-white hover:text-[#00d2ff] transition-colors border border-white/10 shadow-lg">
